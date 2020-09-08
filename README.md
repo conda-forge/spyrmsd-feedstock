@@ -5,7 +5,7 @@ Home: https://github.com/RMeli/spyrmsd
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Symmetry-corrected RMSD
 
@@ -118,7 +118,4 @@ Feedstock Maintainers
 =====================
 
 * [@RMeli](https://github.com/RMeli/)
-
-
-<!-- dummy commit to enable rerendering -->
 
