@@ -5,9 +5,13 @@ Home: https://github.com/RMeli/spyrmsd
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/spyrmsd-feedstock/blob/master/LICENSE.txt)
 
 Summary: Symmetry-corrected RMSD
+
+Development: https://github.com/RMeli/spyrmsd
+
+Documentation: https://spyrmsd.readthedocs.io/en/master/
 
 Symmetry-corrected RMSD
 
