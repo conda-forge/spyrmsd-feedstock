@@ -1,5 +1,5 @@
 {% set name = "spyrmsd" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e3684dbb7fa354751fc3c0024276937e501fcf98c7c2ff34b515d659291393e5
+  sha256: ee7b6c8c9535743f5499a1ebb1fc8244c6263499c5b9b4258727c024694fcb90
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Symmetry-corrected RMSD'
+  summary: Symmetry-corrected RMSD
 
   description: |
     Symmetry-corrected RMSD
