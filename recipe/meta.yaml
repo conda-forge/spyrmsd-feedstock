@@ -30,6 +30,8 @@ test:
     - spyrmsd
   requires:
     - pytest
+  source_files:
+    - tests
   commands:
     - pytest
 
