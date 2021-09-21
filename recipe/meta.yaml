@@ -33,7 +33,7 @@ test:
   source_files:
     - tests
   commands:
-    - pytest
+    - pytest tests
 
 about:
   home: https://github.com/RMeli/spyrmsd
