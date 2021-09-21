@@ -28,12 +28,6 @@ requirements:
 test:
   imports:
     - spyrmsd
-  requires:
-    - pytest
-  source_files:
-    - tests
-  commands:
-    - pytest tests
 
 about:
   home: https://github.com/RMeli/spyrmsd
