@@ -24,11 +24,16 @@ requirements:
     - numpy
     - scipy
     - networkx >=2
-    - qcelemental
 
 test:
   imports:
     - spyrmsd
+  requires:
+    - pytest
+  source_files:
+    - tests
+  commands:
+    - pytest
 
 about:
   home: https://github.com/RMeli/spyrmsd
