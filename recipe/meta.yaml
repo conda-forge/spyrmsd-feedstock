@@ -1,5 +1,5 @@
 {% set name = "spyrmsd" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ee7b6c8c9535743f5499a1ebb1fc8244c6263499c5b9b4258727c024694fcb90
+  sha256: d823aa39feeaca5286b125b41b98fab8b9474b4c7495fa16356fb5682c251bb6
 
 build:
   noarch: python
@@ -18,13 +18,12 @@ requirements:
   host:
     - python >=3.6
     - pip
-    - flit
+    - poetry
   run:
     - python >=3.6
     - numpy
     - scipy
     - networkx >=2
-    - qcelemental
 
 test:
   imports:
