@@ -1,5 +1,5 @@
 {% set name = "spyrmsd" %}
-{% set version = "0.6.0" %}
+{% set version = "0.7.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: e50e6c63537171882d0d07b1679ae905916bb1ac77ceef1ccb8989e28cf5a3a2
+  sha256: 55f787445e4cf4356c713060eff2e7a99959973167dcf0952e18162c07330e78
 
 build:
   noarch: python
@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.9
     - pip
     - flit
   run:
-    - python >=3.7
+    - python >=3.9
     - numpy
     - scipy
     - networkx >=2
