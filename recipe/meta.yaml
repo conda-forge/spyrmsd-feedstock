@@ -1,5 +1,5 @@
 {% set name = "spyrmsd" %}
-{% set version = "0.7.0" %}
+{% set version = "0.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 55f787445e4cf4356c713060eff2e7a99959973167dcf0952e18162c07330e78
+  sha256: 401681c5338c06215321c7c3960ca28f22b575118478b7dec6f28b8823b58924
 
 build:
   noarch: python
@@ -23,7 +23,7 @@ requirements:
     - python >=3.9
     - numpy
     - scipy
-    - networkx >=2
+    - rustworkx
 
 test:
   imports:
