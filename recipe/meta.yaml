@@ -23,7 +23,7 @@ requirements:
     - python >=3.9
     - numpy
     - scipy
-    - rustrorkx
+    - rustworkx
 
 test:
   imports:
