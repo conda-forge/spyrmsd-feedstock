@@ -6,26 +6,28 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 401681c5338c06215321c7c3960ca28f22b575118478b7dec6f28b8823b58924
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - flit
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - numpy
     - scipy
     - rustworkx
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - spyrmsd
 
