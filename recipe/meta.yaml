@@ -1,5 +1,5 @@
 {% set name = "spyrmsd" %}
-{% set version = "0.8.0" %}
+{% set version = "0.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 401681c5338c06215321c7c3960ca28f22b575118478b7dec6f28b8823b58924
+  sha256: 4040eb6b4fc7c562ef4cae9b0780462ddefecce63f34f4a497b1336ca0fd658a
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
